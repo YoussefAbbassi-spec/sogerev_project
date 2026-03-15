@@ -1,5 +1,6 @@
 /* ========== Base ========== */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "@/styles/typography.css";
 @import "tailwindcss";
 
@@ -24,5 +25,18 @@
 }
 
 @utility font-montserrat {
+  font-family: var(--font-sans);
+}
+
+/* ========== CSS Variables ========== */
+:root {
+  --color-primary: #F38820;
+  --color-navy: #001F3F;
+  --font-carmine: "Carmine", ui-sans-serif, system-ui;
+  --font-sans: "Montserrat", ui-sans-serif, system-ui;
+}
+
+/* ========== Base ========== */
+* {
   font-family: var(--font-sans);
 }

@@ -1,0 +1,303 @@
+/* ══════════════════════════════════════════════
+   NAVBAR.CSS
+   
+   STRICT RULE:
+   Elements with Tailwind hidden/md:flex/md:hidden
+   → NO display property here AT ALL
+   → Tailwind owns display exclusively
+   
+   Elements always visible (children of above)
+   → display is fine here
+   ══════════════════════════════════════════════ */
+
+/* ─── DESKTOP TOP BAR ─── */
+/* nb-topbar uses "hidden md:flex" → NO display here */
+.nb-topbar {
+  background: #ffffff;
+  border-bottom: 1px solid #ebebeb;
+  align-items: stretch;
+  /* only works when parent sets display:flex via Tailwind */
+  height: 155px;
+  overflow: hidden;
+}
+
+/* Orange parallelogram — child of nb-topbar, always shown when parent shows */
+.nb-logo-zone {
+  display: flex;
+  /* safe: always visible when parent is visible */
+
+  padding-left: 24px;
+  padding-right: 90px;
+  background-color: var(--color-primary);
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+  flex-shrink: 0;
+  min-width: 580px;
+  padding-top: 25px;
+}
+
+.nb-logo-zone img {
+  height: 72px;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+  margin-left: 50px;
+}
+
+
+
+.nb-contacts {
+  display: flex;
+  /* safe: child of nb-topbar */
+  align-items: center;
+  gap: 40px;
+  margin-left: auto;
+  padding-right: 100px;
+  margin-bottom: 35px;
+}
+
+/* ─── DESKTOP NAV ─── */
+/* nb-nav uses "hidden md:flex" → NO display here */
+.nb-nav {
+  background-color: var(--color-navy);
+  align-items: stretch;
+  height: 64px;
+  z-index: 10;
+  width: fit-content;
+  margin: 45px auto;
+  margin-top: -35px;
+  position: relative;
+  padding-left: 45px;
+}
+
+/* nb-links — child of nb-nav, safe */
+.nb-links {
+  display: flex;
+  align-items: stretch;
+  flex: 1;
+  justify-content: center;
+  /* ← centers the links */
+  padding-left: 0;
+  /* ← remove the left push */
+  margin-right: 250px;
+}
+
+.nb-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 20px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+
+.nb-link:hover,
+.nb-link.active {
+  color: #F38820;
+}
+
+/* Underline anchored to the text span — NOT the navbar bottom */
+.nb-link-text {
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.nb-link-text::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #ffffff;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.nb-link:hover .nb-link-text::after,
+.nb-link.active .nb-link-text::after {
+  opacity: 1;
+}
+
+.nb-link.active {
+  font-weight: 600;
+}
+
+/* Orange buttons — children of nb-nav, safe */
+.nb-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 26px;
+  height: 100%;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.2s;
+  flex-shrink: 0;
+  border-left: 8px solid var(--color-navy);
+}
+
+.nb-btn:hover {
+  opacity: 0.88;
+}
+
+/* ─── CATALOGUE DROPDOWN ─── */
+.nb-dropdown {
+  position: absolute;
+  top: calc(100% + 15px);
+  left: -78px;
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.13);
+  border-radius: 4px;
+  z-index: 200;
+  min-width: 340px;
+  padding: 13px;
+}
+
+/* Arrow pointing up */
+.nb-dropdown::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 18px solid #ffffff;
+
+  z-index: 1;
+
+}
+
+.nb-dropdown a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 6px;
+  font-size: 13px;
+  color: #0000004D;
+  text-decoration: none;
+  border-bottom: 1px solid #f3f4f6;
+  transition: background 0.15s;
+  width: 310px;
+}
+
+.nb-dropdown a:last-child {
+  border-bottom: none;
+}
+
+.nb-dropdown a:hover {
+  background: #f9fafb;
+  color: #00000099;
+  font-size: 14px;
+}
+
+/* ─── MOBILE LOGO BAR ─── */
+/* nb-mobile-bar uses "md:hidden" → NO display here */
+.nb-mobile-bar {
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background-color: var(--color-primary);
+}
+
+.nb-mobile-bar img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
+.nb-mobile-bar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+}
+
+/* ─── MOBILE ACTIONS ─── */
+/* uses "md:hidden" → NO display here */
+.nb-mobile-actions {
+  gap: 6px;
+  padding: 18px 40px;
+  background-color: var(--color-navy);
+  background-color: #134A87;
+  margin: 20px auto;
+}
+
+.nb-mobile-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 4px;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border: none;
+
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  border-left: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* ─── MOBILE DROPDOWN & MENU ─── */
+.nb-mobile-dropdown,
+.nb-mobile-menu {
+  /*position: absolute;*/
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 200;
+  padding: 10px;
+}
+
+.nb-dropdown {
+  position: absolute;
+  top: calc(100% + 15px);
+  left: -78px;
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.13);
+  border-radius: 4px;
+  z-index: 200;
+  min-width: 340px;
+  padding: 13px;
+}
+
+.nb-mobile-dropdown a,
+.nb-mobile-menu a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+  font-size: 14px;
+  color: #374151;
+  text-decoration: none;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.nb-mobile-menu a {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.nb-mobile-dropdown a:last-child,
+.nb-mobile-menu a:last-child {
+  border-bottom: none;
+}
