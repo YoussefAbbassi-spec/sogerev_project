@@ -14,7 +14,10 @@ import SLIDE_4 from "./images/slide-4.png";
 
 import LOGO from "./images/logo_.png";
 import buildingImg from "./images/Building.png";
+
 import cubeImg from "./images/Cube.png";
+import cubeImg2 from "./images/Cube2.png";
+
 
 
 
@@ -36,5 +39,6 @@ export const ASSETS = {
     },
     LOGO,
     buildingImg,
-    cubeImg
+    cubeImg,
+    cubeImg2
 }

@@ -29,7 +29,7 @@ const HeroSlider = () => {
 
   return (
     <div>
-      <section className="hidden md:block relative w-full md:h-[830px] overflow-hidden" style={{ marginBottom: '50px' }}>
+      <section className="hidden md:block relative w-full md:h-[830px] overflow-hidden" style={{ marginBottom: '30px' }}>
         {/* BACKGROUND */}
         <div className="absolute inset-0">
           {slide.heroImage ? (
@@ -156,7 +156,7 @@ const HeroSlider = () => {
 
 
       {/* ── MOBILE VERSION ── */}
-      < section className="block md:hidden relative w-full h-[400px] overflow-hidden  mb-[80px]" >
+      < section className="block md:hidden relative w-full h-[400px] overflow-hidden  " >
 
         {/* BACKGROUND */}
         < div className="absolute inset-0" >

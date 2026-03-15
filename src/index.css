@@ -1,6 +1,7 @@
 /* ========== Base ========== */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap');
 @import "@/styles/typography.css";
 @import "tailwindcss";
 
@@ -32,8 +33,10 @@
 :root {
   --color-primary: #F38820;
   --color-navy: #001F3F;
+  --color-text-gray: #636363;
   --font-carmine: "Carmine", ui-sans-serif, system-ui;
   --font-sans: "Montserrat", ui-sans-serif, system-ui;
+  --font-poppins: "Poppins", sans-serif;
 }
 
 /* ========== Base ========== */
