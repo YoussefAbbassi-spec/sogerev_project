@@ -106,3 +106,30 @@ export const HERO_CTAS = [
     { id: "products", label: "Découvrir nos produits", href: "#" },
 ];
 
+// ========== ABOUTSection SLIDER CARDS ==========
+export const SLIDER_CARDS = [
+    {
+        id: 0, src: "/videos/test.mp4", poster: ASSETS.IMAGES.poster1,
+        title: "VOTRE CUISINE\nSUR MESURE",
+        subtitle: "De l'idée à la réalisation, nous faisons vivre votre projet.",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        id: 1, src: "/videos/test.mp4", poster: ASSETS.IMAGES.poster2,
+        title: "VOTRE SALLE DE BAIN\nSUR MESURE",
+        subtitle: "De l'idée à la réalisation, nous faisons vivre votre projet.",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        id: 2, src: "/videos/test.mp4", poster: ASSETS.IMAGES.poster1,
+        title: "VOS ESPACES\nSUR MESURE",
+        subtitle: "De l'idée à la réalisation, nous faisons vivre votre projet.",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        id: 3, src: "/videos/test.mp4", poster: ASSETS.IMAGES.poster2,
+        title: "VOTRE SALON\nSUR MESURE",
+        subtitle: "De l'idée à la réalisation, nous faisons vivre votre projet.",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+];

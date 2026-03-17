@@ -19,6 +19,7 @@
   /* only works when parent sets display:flex via Tailwind */
   height: 155px;
   overflow: hidden;
+
 }
 
 /* Orange parallelogram — child of nb-topbar, always shown when parent shows */

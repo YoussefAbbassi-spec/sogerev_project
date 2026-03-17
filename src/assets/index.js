@@ -17,7 +17,12 @@ import buildingImg from "./images/Building.png";
 
 import cubeImg from "./images/Cube.png";
 import cubeImg2 from "./images/Cube2.png";
+import cubeImg3 from "./images/Cube3.png";
 
+import aboutBg from "./images/about-bg.png";
+import lineImg from "./images/line.png";
+import poster1 from "./images/poster-1.png";
+import poster2 from "./images/poster-2.png";
 
 
 
@@ -26,7 +31,12 @@ export const ASSETS = {
         SLIDE_1,
         SLIDE_2,
         SLIDE_3,
-        SLIDE_4
+        SLIDE_4,
+        aboutBg,
+        lineImg,
+        poster1,
+        poster2,
+        cubeImg3
     },
     ICONS: {
 
@@ -40,5 +50,5 @@ export const ASSETS = {
     LOGO,
     buildingImg,
     cubeImg,
-    cubeImg2
+    cubeImg2,
 }
