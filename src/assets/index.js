@@ -46,6 +46,7 @@ export const ASSETS = {
         MDF_COLOR: null,
         MDF_LOGIMAR: null,
         NEW_MDF: null,
+        MARBRE_GRANITE: null,
     },
     LOGO,
     buildingImg,

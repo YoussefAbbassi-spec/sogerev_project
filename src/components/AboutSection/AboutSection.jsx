@@ -47,7 +47,7 @@ const AboutSection = () => {
 
 
   return (
-    <section className="relative bg-white px-5 pt-8 pb-10 md:px-16 md:pt-12 md:pb-16 overflow-hidden md:mb-5">
+    <section className="relative bg-white px-5 pt-8 pb-10 md:px-16 md:pt-12 md:pb-16 overflow-hidden md:mb-2">
 
       {/* ── TOP-RIGHT CUBE (desktop only) ── */}
       <div className="hidden md:block absolute top-[-2px] right-10 w-[230px] overflow-hidden">

@@ -92,3 +92,10 @@ export const ArrowRight = () => (
   </svg>
 )
 
+export const FlechRight = () => (
+  <svg width="44" height="12" viewBox="0 0 50 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M41.0744 0L39.6082 1.32138L45.4106 6.56005H0V8.43434H45.4106L39.6082 13.673L41.0744 14.9944L49.3933 7.49719L41.0744 0Z" fill="white" />
+  </svg>
+)
+
+

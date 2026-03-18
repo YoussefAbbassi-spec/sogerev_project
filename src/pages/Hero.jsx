@@ -2,6 +2,7 @@
 import Navbar from "../components/Navbar/Navbar";
 import HeroSlider from "../components/HeroSlider/HeroSlider";
 import AboutSection from "../components/AboutSection/AboutSection";
+import Catalogues from "../components/Catalogues/Catalogues";
 
 
 const Hero = () => {
@@ -10,6 +11,7 @@ const Hero = () => {
             <Navbar />
             <HeroSlider />
             <AboutSection />
+            <Catalogues />
         </div>
     );
 };

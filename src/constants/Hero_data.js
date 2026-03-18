@@ -33,29 +33,40 @@ export const NAV_LINKS = [
 ];
 
 // ========== CATALOGUES ==========
-// Each catalogue links to a downloadable PDF from ASSETS.PDFS
+
 export const CATALOGUES = [
     {
         id: "mdf-medelack",
         label: "MDF MEDELACK LOGIMAR",
-        pdf: ASSETS.PDFS.MDF_MEDELACK, // replace null in assets/index.js with the PDF
+        pdf: ASSETS.PDFS.MDF_MEDELACK,
+        image: ASSETS.IMAGES.poster1
     },
     {
         id: "mdf-color",
         label: "MDF COLOR",
         pdf: ASSETS.PDFS.MDF_COLOR,
+        image: ASSETS.IMAGES.poster1
     },
     {
         id: "mdf-logimar",
         label: "MDF LOGIMAR",
         pdf: ASSETS.PDFS.MDF_LOGIMAR,
+        image: ASSETS.IMAGES.poster1
     },
     {
         id: "new-mdf",
         label: "NEW MDF LOGIMAR",
         pdf: ASSETS.PDFS.NEW_MDF,
+        image: ASSETS.IMAGES.poster1
+    },
+    {
+        id: "marbre-granite",
+        label: "Marbre & granite",
+        pdf: ASSETS.PDFS.MARBRE_GRANITE,
+        image: ASSETS.IMAGES.poster1
     },
 ];
+
 
 // ========== HERO SLIDES ==========
 export const SLIDES = [
@@ -133,3 +144,4 @@ export const SLIDER_CARDS = [
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
 ];
+
