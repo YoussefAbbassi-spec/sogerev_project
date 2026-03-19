@@ -46,7 +46,7 @@ const Catalogues = () => {
       {/* ── TOP LABEL ── */}
       <div className="flex flex-row items-stretch gap-3">
         {/* Left orange line */}
-        <div style={{
+        <div class='hidden md:block' style={{
           width: "2.5px",
           backgroundColor: "var(--color-primary)",
           borderRadius: "2px",
@@ -60,12 +60,12 @@ const Catalogues = () => {
             <span style={{ color: "rgba(19, 74, 135, 1)", fontFamily: "var(--font-poppins)" }}>NOS </span>
             <span style={{ color: "var(--color-primary)", fontFamily: "var(--font-poppins)" }}>CATALOGUES</span>
           </p>
-          <p className="text-[13px] md:text-[32px] uppercase tracking-wider font-extralight"
+          <p className="text-[15px] md:text-[32px] uppercase tracking-wider font-extralight"
             style={{ color: "var(--color-text-gray)", fontFamily: "var(--font-poppins)" }}>
             L'EXCELLENCE DU SUR-MESURE
           </p>
           {/* Orange underline */}
-          <div className="mt-2" style={{
+          <div className="mt-2 hidden md:block" style={{
             width: "380px",
             height: "2.5px",
             backgroundColor: "var(--color-primary)",
@@ -76,7 +76,7 @@ const Catalogues = () => {
 
       {/* ── TAGLINE ── */}
       <p
-        className="text-[11px] md:text-[19px] uppercase tracking-wider mt-8 mb-10"
+        className="text-[11px] md:text-[19px] uppercase tracking-wider md:mt-8 mt-4 mb-10"
         style={{ color: "var(--color-text-gray)", fontFamily: "var(--font-poppins)", fontWeight: 400 }}
       >
         ADMIREZ NOS RÉALISATIONS ET IMAGINEZ CE QUE NOUS POUVONS CRÉER POUR VOUS.
@@ -138,7 +138,7 @@ const Catalogues = () => {
       {/* ── CARDS GRID — MOBILE ── */}
       {/* All 4 cards stacked vertically */}
       <div className="flex md:hidden flex-col gap-4">
-        {CATALOGUES.map((cat) => (
+        {CATALOGUES.filter((cat) => cat.id !== "new-mdf").map((cat) => (
           <div
             key={cat.id}
             className="relative overflow-hidden w-full"

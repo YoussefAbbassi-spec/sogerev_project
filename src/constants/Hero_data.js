@@ -145,3 +145,41 @@ export const SLIDER_CARDS = [
     },
 ];
 
+// ========== SERVICES ==========
+export const SERVICES = [
+    {
+        id: 0,
+        image: ASSETS.IMAGES["service1"],
+        title: "CONCEPTION INTÉRIEURE",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. vivamus euismod, justo at tincidunt tristique, ligula nisi volutpat elit, at luctus nunc eros a est.",
+    },
+    {
+        id: 1,
+        image: ASSETS.IMAGES["service1"],
+        title: "REVÊTEMENTS EN PIERRE",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. vivamus euismod, justo at tincidunt tristique, ligula nisi volutpat elit, at luctus nunc eros a est.",
+    },
+    {
+        id: 2,
+        image: ASSETS.IMAGES["service1"],
+        title: "MENUISERIE SUR MESURE",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. vivamus euismod, justo at tincidunt tristique, ligula nisi volutpat elit, at luctus nunc eros a est.",
+    },
+    {
+        id: 3,
+        image: ASSETS.IMAGES["service1"],
+        title: "AMÉNAGEMENT COMPLET",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. vivamus euismod, justo at tincidunt tristique, ligula nisi volutpat elit, at luctus nunc eros a est.",
+    },
+    {
+        id: 4,
+        image: ASSETS.IMAGES["service1"],
+        title: "IMPORT DE MATÉRIAUX",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. vivamus euismod, justo at tincidunt tristique, ligula nisi volutpat elit, at luctus nunc eros a est.",
+    },
+];

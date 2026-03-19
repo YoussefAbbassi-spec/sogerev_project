@@ -24,6 +24,9 @@ import lineImg from "./images/line.png";
 import poster1 from "./images/poster-1.png";
 import poster2 from "./images/poster-2.png";
 
+import service1 from "./images/service-1.png";
+import vector from "./images/vector.png";
+
 
 
 export const ASSETS = {
@@ -36,7 +39,9 @@ export const ASSETS = {
         lineImg,
         poster1,
         poster2,
-        cubeImg3
+        cubeImg3,
+        service1,
+        vector
     },
     ICONS: {
 
