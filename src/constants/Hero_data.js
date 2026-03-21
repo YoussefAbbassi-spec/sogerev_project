@@ -183,3 +183,67 @@ export const SERVICES = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. vivamus euismod, justo at tincidunt tristique, ligula nisi volutpat elit, at luctus nunc eros a est.",
     },
 ];
+
+// ========== CATEGORIES DATA  ==========
+export const CATEGORIES = [
+    {
+        id: "marbre",
+        label: "Marbre",
+        products: [
+            { id: 1, name: "Marbre Taza Beige Bouchardé", image: ASSETS.IMAGES.produit1 },
+            { id: 2, name: "Marbre Taza Gris Bouchardé", image: ASSETS.IMAGES.produit2 },
+            { id: 3, name: "Marbre Marron Imperial", image: ASSETS.IMAGES.produit3 },
+            { id: 4, name: "Marbre Blanc Marmara", image: ASSETS.IMAGES.produit4 },
+            { id: 5, name: "Marbre Noir Marquina", image: ASSETS.IMAGES.produit1 },
+            { id: 6, name: "Marbre Crema Marfil", image: ASSETS.IMAGES.produit2 },
+        ],
+    },
+    {
+        id: "granite",
+        label: "Granite",
+        products: [
+            { id: 1, name: "Granite Noir Zimbabwe", image: ASSETS.IMAGES.produit1 },
+            { id: 2, name: "Granite Gris Perle", image: ASSETS.IMAGES.produit2 },
+            { id: 3, name: "Granite Beige Cachemire", image: ASSETS.IMAGES.produit3 },
+            { id: 4, name: "Granite Rouge Multicolore", image: ASSETS.IMAGES.produit4 },
+            { id: 5, name: "Granite Bleu Bahia", image: ASSETS.IMAGES.produit1 },
+            { id: 6, name: "Granite Vert Ubatuba", image: ASSETS.IMAGES.produit2 },
+        ],
+    },
+    {
+        id: "mdf-medelack",
+        label: "Mdf Medelack",
+        products: [
+            { id: 1, name: "MDF Medelack Blanc", image: ASSETS.IMAGES.produit1 },
+            { id: 2, name: "MDF Medelack Noir", image: ASSETS.IMAGES.produit2 },
+            { id: 3, name: "MDF Medelack Chêne", image: ASSETS.IMAGES.produit3 },
+            { id: 4, name: "MDF Medelack Noyer", image: ASSETS.IMAGES.produit4 },
+            { id: 5, name: "MDF Medelack Gris", image: ASSETS.IMAGES.produit1 },
+            { id: 6, name: "MDF Medelack Wengé", image: ASSETS.IMAGES.produit2 },
+        ],
+    },
+    {
+        id: "mdf-color",
+        label: "Mdf Color",
+        products: [
+            { id: 1, name: "MDF Color Rouge", image: ASSETS.IMAGES.produit1 },
+            { id: 2, name: "MDF Color Bleu", image: ASSETS.IMAGES.produit2 },
+            { id: 3, name: "MDF Color Vert", image: ASSETS.IMAGES.produit3 },
+            { id: 4, name: "MDF Color Jaune", image: ASSETS.IMAGES.produit4 },
+            { id: 5, name: "MDF Color Orange", image: ASSETS.IMAGES.produit1 },
+            { id: 6, name: "MDF Color Violet", image: ASSETS.IMAGES.produit2 },
+        ],
+    },
+    {
+        id: "mdf-logimar",
+        label: "Mdf Logimar",
+        products: [
+            { id: 1, name: "MDF Logimar Classic", image: ASSETS.IMAGES.produit1 },
+            { id: 2, name: "MDF Logimar Premium", image: ASSETS.IMAGES.produit2 },
+            { id: 3, name: "MDF Logimar Elite", image: ASSETS.IMAGES.produit3 },
+            { id: 4, name: "MDF Logimar Ultra", image: ASSETS.IMAGES.produit4 },
+            { id: 5, name: "MDF Logimar Pro", image: ASSETS.IMAGES.produit1 },
+            { id: 6, name: "MDF Logimar Max", image: ASSETS.IMAGES.produit2 },
+        ],
+    },
+];

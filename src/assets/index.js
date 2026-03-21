@@ -27,6 +27,11 @@ import poster2 from "./images/poster-2.png";
 import service1 from "./images/service-1.png";
 import vector from "./images/vector.png";
 
+import produit_bg from "./images/produit-bg.png";
+import produit1 from "./images/produit-1.png";
+import produit2 from "./images/produit-3.png";
+import produit3 from "./images/produit-2.png";
+import produit4 from "./images/produit-4.png";
 
 
 export const ASSETS = {
@@ -41,7 +46,12 @@ export const ASSETS = {
         poster2,
         cubeImg3,
         service1,
-        vector
+        vector,
+        produit_bg,
+        produit1,
+        produit2,
+        produit3,
+        produit4,
     },
     ICONS: {
 
