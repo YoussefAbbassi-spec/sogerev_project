@@ -31,7 +31,7 @@ const CardContent = ({ cat, position }) => (
 
 const Catalogues = () => {
   return (
-    <section className="relative bg-white px-5 md:px-23 pt-7 md:pt-9 pb-10 md:pb-16 overflow-hidden">
+    <section className="relative bg-white px-5 md:px-23 pt-7 md:pt-9 pb-10 md:pb-16 overflow-hidden" id="catalogues">
 
       {/* ── TOP-RIGHT CUBE (desktop only) ── */}
       <div className="hidden md:block absolute top-[-35px] right-18 w-[280px] ">

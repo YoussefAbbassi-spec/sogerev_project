@@ -5,6 +5,7 @@ import AboutSection from "../components/AboutSection/AboutSection";
 import Catalogues from "../components/Catalogues/Catalogues";
 import Services from "../components/Services/Services";
 import Produits from "../components/Produits/Produits";
+import Contact from "../components/Contact/Contact";
 
 const Hero = () => {
     return (
@@ -15,6 +16,7 @@ const Hero = () => {
             <Catalogues />
             <Services />
             <Produits />
+            <Contact />
         </div>
     );
 };

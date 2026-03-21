@@ -3,10 +3,10 @@ import { Phone0, Email, Address } from "../Icons/Icons";
 import { Menu, X, ChevronDown, MoveRight, ChevronRight } from "lucide-react";
 import ContactItem from "../ContactItem/ContactItem";
 import { ASSETS } from "../../assets";
-import { NAV_LINKS, CATALOGUES, CONTACT_INFO } from "../../constants/Hero_data";
+import { NAV_LINKS, CATALOGUES, CONTACT_INFO, CONTACT_ICONS } from "../../constants/Hero_data";
 import "./Navbar.css";
 
-const CONTACT_ICONS = { phone: Phone0, email: Email, address: Address };
+
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);

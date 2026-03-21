@@ -78,7 +78,7 @@ const Produits = () => {
     };
 
     return (
-        <section className="mb-15">
+        <section className="mb-15" id="products">
 
             {/* ═══════════════════════ WHITE TOP AREA ═══════════════════════ */}
             <div className="bg-white px-5 pt-8 pb-4 md:px-16 md:pt-12 md:pb-6 md:pl-23">

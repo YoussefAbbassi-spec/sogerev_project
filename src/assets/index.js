@@ -18,6 +18,7 @@ import buildingImg from "./images/Building.png";
 import cubeImg from "./images/Cube.png";
 import cubeImg2 from "./images/Cube2.png";
 import cubeImg3 from "./images/Cube3.png";
+import cubeImg4 from "./images/Cube4.png";
 
 import aboutBg from "./images/about-bg.png";
 import lineImg from "./images/line.png";
@@ -52,6 +53,7 @@ export const ASSETS = {
         produit2,
         produit3,
         produit4,
+        cubeImg4,
     },
     ICONS: {
 

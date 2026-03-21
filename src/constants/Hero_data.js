@@ -1,5 +1,10 @@
 
 import { ASSETS } from "../assets";
+import {
+    Phone0, Email, Address,
+    Instagram, Facebook, TikTokIcon, Youtube, WhatsAppIcon,
+
+} from "../components/Icons/Icons";
 
 // ========== CONTACT INFO ==========
 export const CONTACT_INFO = [
@@ -113,8 +118,8 @@ export const SOCIAL_LINKS = [
 
 // ========== HERO CTAS ==========
 export const HERO_CTAS = [
-    { id: "catalogues", label: "Voir nos catalogues", href: "#" },
-    { id: "products", label: "Découvrir nos produits", href: "#" },
+    { id: "catalogues", label: "Voir nos catalogues", href: "#catalogues" },
+    { id: "products", label: "Découvrir nos produits", href: "#products" },
 ];
 
 // ========== ABOUTSection SLIDER CARDS ==========
@@ -246,4 +251,27 @@ export const CATEGORIES = [
             { id: 6, name: "MDF Logimar Max", image: ASSETS.IMAGES.produit2 },
         ],
     },
+];
+/* ─────────────────────── CONTACT ICON MAP ─────────────────────── */
+export const CONTACT_ICONS = {
+    phone: Phone0,
+    email: Email,
+    address: Address,
+};
+/* ─────────────────────── SOCIAL ICONS MAP ─────────────────────── */
+export const SOCIAL_ICONS = {
+    instagram: Instagram,
+    facebook: Facebook,
+    tiktok: TikTokIcon,
+    youtube: Youtube,
+    whatsapp: WhatsAppIcon,
+};
+
+
+/* ─────────────────────── FORM FIELDS ─────────────────────── */
+export const FORM_FIELDS = [
+    { key: "name", placeholder: "Nom et Prénom", type: "text" },
+    { key: "email", placeholder: "E-mail", type: "email" },
+    { key: "phone", placeholder: "Numéro du téléphone", type: "tel" },
+    { key: "message", placeholder: "Votre message", type: "text", tall: true },
 ];
