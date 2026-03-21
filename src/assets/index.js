@@ -26,7 +26,7 @@ import poster1 from "./images/poster-1.png";
 import poster2 from "./images/poster-2.png";
 
 import service1 from "./images/service-1.png";
-import vector from "./images/vector.png";
+import vector from "./images/Vector.png";
 
 import produit_bg from "./images/produit-bg.png";
 import produit1 from "./images/produit-1.png";
