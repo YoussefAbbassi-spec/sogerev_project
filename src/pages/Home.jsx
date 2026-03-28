@@ -21,4 +21,4 @@ const Home = () => {
     );
 };
 
-export default Hero;
+export default Home;
