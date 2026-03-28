@@ -78,34 +78,34 @@ const Produits = () => {
     };
 
     return (
-        <section className="mb-15" id="products">
+        <section className="max-w-[1536px] mx-auto mb-15" id="produits">
 
             {/* ═══════════════════════ WHITE TOP AREA ═══════════════════════ */}
-            <div className="bg-white px-5 pt-8 pb-4 md:px-16 md:pt-12 md:pb-6 md:pl-23">
+            <div className="bg-white px-5 pt-8 pb-4 lg:px-16 lg:pt-12 lg:pb-6 lg:pl-23">
 
                 {/* ── TOP LABEL ── */}
                 <div className="flex flex-row items-stretch gap-3">
                     {/* Left orange line */}
-                    <div className="hidden md:block" style={{
+                    <div className="hidden lg:block" style={{
                         width: "2.5px",
                         backgroundColor: "var(--color-primary)",
                         borderRadius: "2px",
                         transform: "translate(-10px,8px)",
-                        height: "106px"
+                        height: "91.5px"
                     }} />
 
                     {/* Label content */}
                     <div>
-                        <p className="text-[20px] md:text-[36px] uppercase tracking-tight font-semibold">
+                        <p className="text-[20px] lg:text-[34px] uppercase tracking-tight font-semibold mb-[-8px]">
                             <span style={{ color: "rgba(19, 74, 135, 1)", fontFamily: "var(--font-poppins)" }}>NOS </span>
                             <span style={{ color: "var(--color-primary)", fontFamily: "var(--font-poppins)" }}>PRODUITS</span>
                         </p>
-                        <p className="text-[15px] md:text-[32px] uppercase tracking-wider font-extralight"
+                        <p className="text-[15px] lg:text-[30px] uppercase tracking-wider font-extralight"
                             style={{ color: "var(--color-text-gray)", fontFamily: "var(--font-poppins)" }}>
                             NOS RÉALISATIONS SUR MESURE
                         </p>
                         {/* Orange underline */}
-                        <div className="mt-2 hidden md:block" style={{
+                        <div className="mt-2 hidden lg:block" style={{
                             width: "380px",
                             height: "2.5px",
                             backgroundColor: "var(--color-primary)",
@@ -116,7 +116,7 @@ const Produits = () => {
 
                 {/* ── DESCRIPTION ── */}
                 <p
-                    className="text-[12px] md:text-[19px] mt-6 mb-0 max-w-[800px] font-normal"
+                    className="text-[12px] lg:text-[19px] mt-6 mb-0 max-w-[800px] font-normal"
                     style={{
                         color: "var(--color-text-gray)",
                         fontFamily: "var(--font-poppins)",
@@ -129,7 +129,7 @@ const Produits = () => {
 
             {/* ═══════════════════════ DARK BACKGROUND SECTION ═══════════════════════ */}
             <div
-                className="relative md:py-9 md:px-9"
+                className="relative lg:py-7 lg:px-9"
                 style={{
                     backgroundImage: `url(${ASSETS.IMAGES.produit_bg})`,
                     backgroundSize: "cover",
@@ -139,7 +139,7 @@ const Produits = () => {
                 {/* Dark overlay */}
                 <div className="absolute inset-0 bg-black/70" />
 
-                <div className="relative z-10 py-8 px-4 md:py-10 md:px-16">
+                <div className="relative z-10 py-8 px-4 lg:py-10 lg:px-16">
 
                     {/* ── CATEGORY TABS ── */}
                     <div className="flex flex-row flex-wrap gap-2 mb-8 justify-center mb-15">
@@ -169,7 +169,7 @@ const Produits = () => {
                                     }
                                 }}
                             >
-                                <span className="text-[12px] md:text-[13px]">{cat.label}</span>
+                                <span className="text-[12px] lg:text-[13px]">{cat.label}</span>
                                 {index === activeCategory && <ChevronDown size={14} />}
                             </button>
                         ))}
@@ -181,7 +181,7 @@ const Produits = () => {
                         {/* LEFT ARROW — desktop only */}
                         <button
                             onClick={prev}
-                            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 hover:opacity-80 transition-opacity hidden md:block cursor-pointer"
+                            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 hover:opacity-80 transition-opacity hidden lg:block cursor-pointer"
                             aria-label="Previous product"
                         >
                             <ArrowLeft />
@@ -190,7 +190,7 @@ const Produits = () => {
                         {/* RIGHT ARROW — desktop only */}
                         <button
                             onClick={next}
-                            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 hover:opacity-80 transition-opacity hidden md:block cursor-pointer"
+                            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 hover:opacity-80 transition-opacity hidden lg:block cursor-pointer"
                             aria-label="Next product"
                         >
                             <ArrowRight />
@@ -199,7 +199,7 @@ const Produits = () => {
                         {/* OVERFLOW CONTAINER — DESKTOP */}
                         <div
                             ref={containerRef}
-                            className="overflow-hidden w-full mx-0 md:mx-16 hidden md:block"
+                            className="overflow-hidden w-full mx-0 lg:mx-16 hidden lg:block"
                         >
                             {/* TRACK — DESKTOP */}
                             <div
@@ -207,7 +207,6 @@ const Produits = () => {
                                 style={{
                                     gap: `${CARD_GAP}px`,
                                     transform: `translateX(-${sliderIndex * STEP}px)`,
-                                    // ✅ instant when dragging, fast smooth when clicking arrows
                                     transition: isDragging.current ? "none" : "transform 0.15s ease",
                                 }}
                             >
@@ -224,7 +223,7 @@ const Produits = () => {
                                             src={product.image}
                                             alt={product.name}
                                             className="w-full object-cover mb-2"
-                                            style={{ height: "210px" }}
+                                            style={{ height: "200px" }}
                                         />
                                         <p
                                             className="text-center leading-tight"
@@ -246,7 +245,7 @@ const Produits = () => {
                         {/* OVERFLOW CONTAINER — MOBILE */}
                         <div
                             ref={mobileContainerRef}
-                            className="overflow-hidden w-full block md:hidden"
+                            className="overflow-hidden w-full block lg:hidden"
                             onTouchStart={handleTouchStart}
                             onTouchMove={handleTouchMove}
                             onTouchEnd={handleTouchEnd}
@@ -292,7 +291,7 @@ const Produits = () => {
                     </div>
 
                     {/* ── ORANGE SCROLLBAR — DESKTOP ONLY ── */}
-                    <div className="hidden md:flex items-center justify-center gap-3 mt-15">
+                    <div className="hidden lg:flex items-center justify-center gap-3 mt-15">
 
                         {/* PROGRESS TRACK WRAPPER */}
                         <div

@@ -29,7 +29,7 @@ const HeroSlider = () => {
 
   return (
     <div>
-      <section className="hidden md:block relative w-full md:h-[830px] overflow-hidden" style={{ marginBottom: '30px' }}>
+      <section className="max-w-[1536px] mx-auto hidden lg:block relative w-full lg:h-[830px] overflow-hidden " style={{ marginBottom: '30px' }}>
         {/* BACKGROUND */}
         <div className="absolute inset-0">
           {slide.heroImage ? (
@@ -45,15 +45,15 @@ const HeroSlider = () => {
         </div>
 
         {/* SLIDE CONTENT */}
-        <div className="relative z-10 h-full flex flex-col justify-end pb-10 md:px-16">
-          <div className="md:max-w-[750px]">
+        <div className="relative z-10 h-full flex flex-col justify-end pb-10 lg:px-16">
+          <div className="lg:max-w-[750px]">
             <h1
-              className="text-white font-black md:text-[52px] leading-tight mb-4 uppercase"
-              style={{ fontFamily: "Roboto, sans-serif", fontWeight: 400 }}
+              className="text-white  lg:text-[52px]  leading-tight mb-4 uppercase"
+              style={{ fontFamily: "Roboto, sans-serif", fontWeight: 400, }}
             >
               {slide.heroTitle}
             </h1>
-            <p className="text-gray-300 md:text-base mb-6">
+            <p className="text-gray-300 lg:text-base mb-6">
               {slide.heroSubTitle}
             </p>
 
@@ -64,7 +64,7 @@ const HeroSlider = () => {
               SUIVEZ-NOUS :
             </p>
 
-            <div className="flex items-center gap-2 md:mb-18">
+            <div className="flex items-center gap-2 lg:mb-18">
               <a
                 className="w-9 h-9 flex items-center justify-center flex-shrink-0"
                 style={{
@@ -93,13 +93,13 @@ const HeroSlider = () => {
         </div>
 
         {/* SIDE CTAs */}
-        <div className="hidden md:flex absolute right-8 bottom-16 flex-col gap-3 z-10 md:mb-17 md:mr-10">
+        <div className="hidden lg:flex absolute right-8 bottom-16 flex-col gap-3 z-10 lg:mb-17 lg:mr-10">
           {HERO_CTAS.map((cta) => (
 
             <a
               key={cta.id}
               href={cta.href}
-              className="flex min-w-[220px] items-center gap-3 bg-white text-gray-800 px-5 py-3 rounded text-sm font-semibold hover:bg-gray-100 transition-all shadow-md"
+              className="flex min-w-[220px] items-center gap-3 bg-white text-gray-800 px-5 py-3 rounded text-sm font-semibold hover:bg-gray-100 transition-all shadow-lg"
             >
               <span
                 className="w-2 h-2 rounded-full flex-shrink-0"
@@ -114,18 +114,18 @@ const HeroSlider = () => {
         {/* ARROWS */}
         < button
           onClick={prev}
-          className="absolute left-8 md:top-1/7 -translate-y-1/2 z-10 flex items-center justify-center text-white transition-all hover:opacity-70"
+          className="absolute left-8 lg:top-1/7 -translate-y-1/2 z-10 flex items-center justify-center text-white transition-all hover:opacity-70"
           aria-label="Slide précédent"
         >
-          <ChevronLeft strokeWidth={0.7} className="md:w-[110px] md:h-[110px]" />
+          <ChevronLeft strokeWidth={0.7} className="lg:w-[110px] lg:h-[110px]" />
         </button >
 
         <button
           onClick={next}
-          className="absolute right-8 md:top-1/6 -translate-y-1/2 z-10 flex items-center justify-center text-white transition-all hover:opacity-70"
+          className="absolute right-8 lg:top-1/6 -translate-y-1/2 z-10 flex items-center justify-center text-white transition-all hover:opacity-70"
           aria-label="Slide suivant"
         >
-          <ChevronRight strokeWidth={0.7} className="md:w-[110px] md:h-[110px]" />
+          <ChevronRight strokeWidth={0.7} className="lg:w-[110px] lg:h-[110px]" />
         </button>
 
         {/* DOTS */}
@@ -140,7 +140,7 @@ const HeroSlider = () => {
           >
             <path
               d="M0 49C109.445 48.9999 81.8591 8.77383e-05 167.017 2.65388e-10L889.983 0C975.141 3.05176e-05 947.555 48.9999 1057 49L0 49Z"
-              fill="#F6F6F6"
+              fill="#ffffffff"
             />
             <rect x="458" y="28" width="19.2542" height="7" fill={current === 0 ? "#1D1D1D" : "#CCCCCC"} style={{ cursor: 'pointer' }} onClick={() => setCurrent(0)} />
             <rect x="483.873" y="28" width="19.2542" height="7" fill={current === 1 ? "#1D1D1D" : "#CCCCCC"} style={{ cursor: 'pointer' }} onClick={() => setCurrent(1)} />
@@ -156,7 +156,7 @@ const HeroSlider = () => {
 
 
       {/* ── MOBILE VERSION ── */}
-      < section className="block md:hidden relative w-full h-[400px] overflow-hidden  " >
+      < section className="block lg:hidden relative w-full h-[400px] overflow-hidden  " >
 
         {/* BACKGROUND */}
         < div className="absolute inset-0" >
@@ -248,7 +248,7 @@ const HeroSlider = () => {
           >
             <path
               d="M0 49C109.445 48.9999 81.8591 8.77383e-05 167.017 2.65388e-10L889.983 0C975.141 3.05176e-05 947.555 48.9999 1057 49L0 49Z"
-              fill="#F6F6F6"
+              fill="#ffffffff"
             />
           </svg>
           {/* HTML dots — completely independent from SVG scaling */}

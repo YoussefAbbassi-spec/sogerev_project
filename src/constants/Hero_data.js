@@ -31,10 +31,10 @@ export const CONTACT_INFO = [
 // ========== NAV LINKS ==========
 export const NAV_LINKS = [
     { id: "home", label: "Accueil", href: "#" },
-    { id: "about", label: "À propos", href: "#" },
-    { id: "products", label: "Nos produits", href: "#" },
-    { id: "services", label: "Nos services", href: "#" },
-    { id: "contact", label: "Contactez-Nous", href: "#" },
+    { id: "about", label: "À propos", href: "#propos" },
+    { id: "products", label: "Nos produits", href: "#produits" },
+    { id: "services", label: "Nos services", href: "#services" },
+    { id: "contact", label: "Contactez-Nous", href: "#contact" },
 ];
 
 // ========== CATALOGUES ==========
@@ -68,7 +68,8 @@ export const CATALOGUES = [
         id: "marbre-granite",
         label: "Marbre & granite",
         pdf: ASSETS.PDFS.MARBRE_GRANITE,
-        image: ASSETS.IMAGES.poster1
+        image: ASSETS.IMAGES.poster1,
+        hidden: true
     },
 ];
 
@@ -119,7 +120,7 @@ export const SOCIAL_LINKS = [
 // ========== HERO CTAS ==========
 export const HERO_CTAS = [
     { id: "catalogues", label: "Voir nos catalogues", href: "#catalogues" },
-    { id: "products", label: "Découvrir nos produits", href: "#products" },
+    { id: "products", label: "Découvrir nos produits", href: "#produits" },
 ];
 
 // ========== ABOUTSection SLIDER CARDS ==========

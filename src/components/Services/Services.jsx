@@ -42,32 +42,32 @@ const Services = () => {
     };
 
     return (
-        <section className="bg-white px-5 pt-8 pb-10 md:px-16 md:pt-12 md:pb-16 overflow-hidden md:pl-23">
+        <section id="services" className="max-w-[1536px] mx-auto bg-white px-5 pt-8 pb-10 lg:px-16 lg:pt-12 lg:pb-16 overflow-hidden lg:pl-23">
 
 
             {/* ── TOP LABEL ── */}
             <div className="flex flex-row items-stretch gap-3">
                 {/* Left orange line */}
-                <div class='hidden md:block' style={{
+                <div class='hidden lg:block' style={{
                     width: "2.5px",
                     backgroundColor: "var(--color-primary)",
                     borderRadius: "2px",
                     transform: "translate(-10px,8px)",
-                    height: '106px'
+                    height: '91.5px'
                 }} />
 
                 {/* Label content */}
                 <div>
-                    <p className="text-[20px] md:text-[36px] uppercase tracking-tight font-semibold">
+                    <p className="text-[20px] lg:text-[34px] uppercase tracking-tight font-semibold mb-[-8px]">
                         <span style={{ color: "rgba(19, 74, 135, 1)", fontFamily: "var(--font-poppins)" }}>NOS </span>
                         <span style={{ color: "var(--color-primary)", fontFamily: "var(--font-poppins)" }}>SERVICES</span>
                     </p>
-                    <p className="text-[15px] md:text-[32px] uppercase tracking-wider font-extralight"
+                    <p className="text-[15px] lg:text-[30px] uppercase tracking-wider font-extralight"
                         style={{ color: "var(--color-text-gray)", fontFamily: "var(--font-poppins)" }}>
                         NOS RÉALISATIONS SUR MESURE
                     </p>
                     {/* Orange underline */}
-                    <div className="mt-2 hidden md:block" style={{
+                    <div className="mt-2 hidden lg:block" style={{
                         width: "380px",
                         height: "2.5px",
                         backgroundColor: "var(--color-primary)",
@@ -78,7 +78,7 @@ const Services = () => {
 
             {/* ── DESCRIPTION ── */}
             <p
-                className="text-[11px] md:text-[19px]  tracking-wider md:mt-8 mt-4 mb-10 max-w-[880px]"
+                className="text-[11px] lg:text-[19px]  tracking-wider lg:mt-4 mt-4 mb-10 max-w-[880px]"
                 style={{ color: "var(--color-text-gray)", fontFamily: "var(--font-poppins)", fontWeight: 300 }}
             >
                 Nous concevons et réalisons vos projets en marbre, granit et pierre
@@ -88,7 +88,7 @@ const Services = () => {
 
 
             {/* ── IMAGE SLIDER — DESKTOP ── */}
-            <div className="hidden md:block relative">
+            <div className="hidden lg:block relative">
 
                 {/* FADE OVERLAY — right edge */}
                 <div
@@ -113,15 +113,18 @@ const Services = () => {
                             transition: "transform 0.4s ease",
                         }}
                     >
+                        {/* width: `${cardWidth}px`,  */}
                         {SERVICES.map((service) => (
                             <div
                                 key={service.id}
                                 className="flex-shrink-0"
                                 style={{
-                                    width: `${cardWidth}px`,
-                                    height: "290px",
+                                    width: `450px`,
+                                    height: "250px",
                                 }}
+
                             >
+
                                 <img
                                     src={service.image}
                                     alt={service.title}
@@ -136,7 +139,7 @@ const Services = () => {
 
             {/* ── IMAGE SLIDER — MOBILE ── */}
             <div
-                className="block md:hidden overflow-hidden w-full"
+                className="block lg:hidden overflow-hidden w-full"
                 onTouchStart={handleTouchStart}
                 onTouchEnd={handleTouchEnd}
             >
@@ -164,12 +167,12 @@ const Services = () => {
             </div>
 
             {/* ── SERVICE INFO BLOCK ── */}
-            <div className="mt-6 max-w-[790px] md:ml-20">
+            <div className="mt-6 max-w-[790px] lg:ml-20">
                 {/* Title row with orange circle */}
                 <div className="flex items-center gap-3">
                     <img src={ASSETS.IMAGES.vector} alt="" className="w-[45px] h-[20px]" />
                     <p
-                        className="text-[16px] md:text-[26px] font-[600] uppercase"
+                        className="text-[16px] lg:text-[26px] font-[600] uppercase"
                         style={{ color: "#134A87", fontFamily: "var(--font-poppins)" }}
                     >
                         {SERVICES[current].title}
@@ -178,7 +181,7 @@ const Services = () => {
 
                 {/* Description with left orange border */}
                 <p
-                    className="text-[12px] md:text-[18px] leading-relaxed mt-3 p-0 pl-4 "
+                    className="text-[12px] lg:text-[18px] leading-relaxed mt-3 p-0 pl-4 "
                     style={{
                         color: "var(--color-text-gray)",
                         fontFamily: "var(--font-poppins)",
@@ -191,7 +194,7 @@ const Services = () => {
             </div>
 
             {/* ── DOTS — MOBILE ── */}
-            <div className="flex md:hidden justify-center gap-2 mt-4">
+            <div className="flex lg:hidden justify-center gap-2 mt-4">
                 {SERVICES.map((_, i) => (
                     <button
                         key={i}
@@ -209,7 +212,7 @@ const Services = () => {
             </div>
 
             {/* ── CUSTOM SCROLLBAR — DESKTOP ── */}
-            <div className="hidden md:flex items-center justify-center gap-3 mt-6">
+            <div className="hidden lg:flex items-center justify-center gap-3 mt-6">
 
                 {/* LEFT ARROW */}
                 <button

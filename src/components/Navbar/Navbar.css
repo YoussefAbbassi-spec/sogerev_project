@@ -19,7 +19,6 @@
   /* only works when parent sets display:flex via Tailwind */
   height: 155px;
   overflow: hidden;
-
 }
 
 /* Orange parallelogram — child of nb-topbar, always shown when parent shows */
@@ -63,11 +62,12 @@
   align-items: stretch;
   height: 64px;
   z-index: 10;
-  width: fit-content;
+  max-width: 87%;
   margin: 45px auto;
   margin-top: -35px;
   position: relative;
   padding-left: 45px;
+
 }
 
 /* nb-links — child of nb-nav, safe */
@@ -79,7 +79,13 @@
   /* ← centers the links */
   padding-left: 0;
   /* ← remove the left push */
-  margin-right: 250px;
+  /* margin-right: 250px; */
+}
+
+.spacer {
+  flex: 1;
+  min-width: 40px;
+  max-width: 250px;
 }
 
 .nb-link {
@@ -158,11 +164,12 @@
   top: calc(100% + 15px);
   left: -78px;
   background: #ffffff;
+  color: #0000004D;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.13);
   border-radius: 4px;
   z-index: 200;
   min-width: 340px;
-  padding: 13px;
+  padding: 18px;
 }
 
 /* Arrow pointing up */
@@ -185,11 +192,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 6px 6px;
-  font-size: 13px;
+  margin: 13px 15px;
+  padding-right: 8px;
+  font-weight: 500;
+  font-size: 16px;
   color: #0000004D;
   text-decoration: none;
-  border-bottom: 1px solid #f3f4f6;
+  border-bottom: 1px solid #00000033;
   transition: background 0.15s;
   width: 310px;
 }
@@ -201,7 +210,8 @@
 .nb-dropdown a:hover {
   background: #f9fafb;
   color: #00000099;
-  font-size: 14px;
+  font-size: 16.5px;
+  font-weight: 600;
 }
 
 /* ─── MOBILE LOGO BAR ─── */

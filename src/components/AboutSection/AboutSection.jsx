@@ -47,10 +47,10 @@ const AboutSection = () => {
 
 
   return (
-    <section className="relative bg-white px-5 pt-8 pb-10 md:px-16 md:pt-12 md:pb-16 overflow-hidden md:mb-2">
+    <section id="propos" className="max-w-[1536px] mx-auto relative bg-white px-5 pt-8 pb-10 lg:px-16 lg:pt-12 lg:pb-16 overflow-hidden lg:mb-2">
 
       {/* ── TOP-RIGHT CUBE (desktop only) ── */}
-      <div className="hidden md:block absolute top-[-2px] right-10 w-[230px] overflow-hidden">
+      <div className="hidden lg:block absolute top-[-2px] right-10 w-[230px] overflow-hidden">
         <img
           src={ASSETS.cubeImg}
           alt=""
@@ -63,7 +63,7 @@ const AboutSection = () => {
       <div className="pl-3 relative flex flex-row items-stretch gap-3 " >
 
 
-        <div className="hidden md:block" style={{
+        <div className="hidden lg:block" style={{
           width: "2.5px",
           height: "101px",
           backgroundColor: "var(--color-primary)",
@@ -71,21 +71,21 @@ const AboutSection = () => {
           transform: "translate(-11px,27px)"
         }} />
         <div>
-          <p className="text-[18px] md:text-[35px] uppercase tracking-widest font-bold" style={{ letterSpacing: "0.2px" }}>
+          <p className="text-[18px] lg:text-[35px] uppercase tracking-widest font-bold" style={{ letterSpacing: "0.2px" }}>
             <span style={{ color: "#134A87" }}>
               QUI SOMMES
-              <span className=" text-[25px] md:text-[50px]">-</span>
+              <span className=" text-[25px] lg:text-[50px]">-</span>
             </span>
             <span style={{ color: "var(--color-primary)" }}>NOUS ?</span>
           </p>
           <p
-            className="text-[15px] md:text-[28px] uppercase tracking-wider   font-light "
+            className="text-[15px] lg:text-[28px] uppercase tracking-wider   font-light "
             style={{ color: "var(--color-text-gray)", fontFamily: "Poppins" }}
           >
             L'ÉLÉGANCE FAÇONNÉE PAR LA PASSION.
           </p>
           <div
-            className="mt-1 hidden md:block"
+            className="mt-1 hidden lg:block"
             style={{
               width: "330px",
               height: "2.5px",
@@ -98,17 +98,17 @@ const AboutSection = () => {
 
       {/* ── MAIN HEADING ── */}
       <h2
-        className="text-[22px] md:text-[90px] font-[500]  leading-tight mt-5 md:mt-8 mb-6 md:mb-10 ml-3 md:ml-10 md:max-w-[100%]"
+        className="text-[22px] lg:text-[90px] font-[500]  leading-tight mt-5 lg:mt-8 mb-6 lg:mb-10 ml-3 lg:ml-10 lg:max-w-[100%]"
         style={{ color: "rgba(5, 15, 39, 1)", fontFamily: "Poppins" }}
       >
         Nous façonnons l'art de l'aménagement de demain.
       </h2>
 
       {/* ── TWO-COLUMN LAYOUT ── */}
-      <div className="flex flex-col md:flex-row md:gap-10 md:items-start">
+      <div className="flex flex-col lg:flex-row lg:gap-10 lg:items-start">
 
         {/* LEFT COLUMN — text */}
-        <div className="w-full md:w-[400px] mb-6 md:mb-0 md:ml-10 p-10 "
+        <div className="w-full lg:w-[400px] mb-6 lg:mb-0 lg:ml-10 p-10 "
           style={{
             backgroundColor: "rgba(255, 255, 255, 1)",
             boxShadow: "0px 0px 2px rgba(0, 0, 0, 0.1)",
@@ -117,13 +117,13 @@ const AboutSection = () => {
           }}
         >
           <p
-            className="text-[17px] md:text-[18px] uppercase  "
+            className="text-[17px] lg:text-[18px] uppercase  "
             style={{ color: "#050F27", fontFamily: "Poppins" }}
           >
             DÉCOUVREZ SOGEREV
           </p>
           <p
-            className="text-[17px] md:text-[20px] font-[800] mb-4"
+            className="text-[17px] lg:text-[20px] font-[800] mb-4"
             style={{ color: "#050F27", fontFamily: "Poppins" }}
           >
             Votre Partenaire pour des Revêtements d'Exception
@@ -146,11 +146,11 @@ const AboutSection = () => {
 
 
         {/* RIGHT COLUMN — video + play button */}
-        <div className="w-full md:w-[64%] relative">
+        <div className="w-full lg:w-[64%] relative">
           <video
             ref={videoRef}
             src="/videos/test.mp4"
-            className="w-full h-[220px] md:h-[596px] object-cover"
+            className="w-full h-[220px] lg:h-[596px] object-cover"
             poster={ASSETS.buildingImg}
             playsInline
           />
@@ -188,7 +188,7 @@ const AboutSection = () => {
 
       {/* ── BOTTOM-LEFT CUBE (desktop only) ── */}
       <div className="relative mb-25">
-        <div className="hidden md:block absolute bottom-[-110px] left-[-60px] w-[190px] overflow-hidden">
+        <div className="hidden lg:block absolute bottom-[-110px] left-[-60px] w-[190px] overflow-hidden">
           <img
             src={ASSETS.cubeImg2}
             alt=""
@@ -205,7 +205,7 @@ const AboutSection = () => {
 
       {/* ✅ DESKTOP VERSION — untouched */}
       <div
-        className="hidden md:block relative w-screen left-1/2 -translate-x-1/2 mt-10 md:mt-16 overflow-hidden p-7"
+        className="hidden lg:block relative w-screen left-1/2 -translate-x-1/2 mt-10 lg:mt-16 overflow-hidden p-7"
         style={{
           backgroundImage: `url(${ASSETS.IMAGES.aboutBg})`,
           backgroundSize: "cover",
@@ -217,12 +217,12 @@ const AboutSection = () => {
         <div className="absolute inset-0" />
 
         {/* CONTENT ROW */}
-        <div className="relative z-10 flex flex-row items-center justify-center h-full py-12 md:py-16 px-16 md:px-20 gap-8 md:gap-12">
+        <div className="relative z-10 flex flex-row items-center justify-center h-full py-12 lg:py-16 px-16 lg:px-20 gap-8 lg:gap-12">
 
           {/* LEFT ARROW */}
           <button
             onClick={sliderPrev}
-            className="absolute left-4 md:left-32 top-1/2 -translate-y-1/2 z-20 hover:opacity-80 transition-opacity flex-shrink-0"
+            className="absolute left-4 lg:left-32 top-1/2 -translate-y-1/2 z-20 hover:opacity-80 transition-opacity flex-shrink-0"
             aria-label="Previous"
           >
             <ArrowLeft />
@@ -300,19 +300,19 @@ const AboutSection = () => {
           {/* TEXT BLOCK */}
           <div className="flex flex-col justify-center flex-1 min-w-0 max-w-[430px]">
             <h3
-              className="text-white font-[700] text-[20px] md:text-[43px] leading-tight mb-4 uppercase whitespace-pre-line"
+              className="text-white font-[700] text-[20px] lg:text-[43px] leading-tight mb-4 uppercase whitespace-pre-line"
               style={{ fontFamily: "var(--font-poppins)" }}
             >
               {SLIDER_CARDS[sliderIndex].title}
             </h3>
             <p
-              className="text-white font-[400] text-[14px] md:text-[22px] mb-4 leading-snug"
+              className="text-white font-[400] text-[14px] lg:text-[22px] mb-4 leading-snug"
               style={{ fontFamily: "var(--font-poppins)" }}
             >
               {SLIDER_CARDS[sliderIndex].subtitle}
             </p>
             <p
-              className="text-gray-200 text-[12px] md:text-[18px] leading-relaxed text-justify"
+              className="text-gray-200 text-[12px] lg:text-[18px] leading-relaxed text-justify"
               style={{ fontFamily: "var(--font-poppins)", fontWeight: 400, lineHeight: "1.4" }}
             >
               {SLIDER_CARDS[sliderIndex].description}
@@ -322,7 +322,7 @@ const AboutSection = () => {
           {/* RIGHT ARROW */}
           <button
             onClick={sliderNext}
-            className="absolute right-4 md:right-28 top-1/2 -translate-y-1/2 z-20 hover:opacity-80 transition-opacity flex-shrink-0"
+            className="absolute right-4 lg:right-28 top-1/2 -translate-y-1/2 z-20 hover:opacity-80 transition-opacity flex-shrink-0"
             aria-label="Next"
           >
             <ArrowRight />
@@ -332,7 +332,7 @@ const AboutSection = () => {
       </div>
 
       {/* ✅ MOBILE VERSION — sliding track, one card at a time */}
-      <div className="block md:hidden mt-10 overflow-hidden">
+      <div className="block lg:hidden mt-10 overflow-hidden">
 
         {/* SLIDING TRACK — all cards in a row, slides by 100% per click */}
         <div

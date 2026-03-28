@@ -5,7 +5,7 @@ import { Phone, Line, Up, LogoSVG, LogoSVG_M } from "../Icons/Icons";
 
 /* ═══════════════════════ COMPONENT ═══════════════════════ */
 const Contact = () => {
-  const [formData, setFormData] = useState({
+  const [forlgata, setForlgata] = useState({
     name: "", email: "", phone: "", message: "",
   });
   const [focusedField, setFocusedField] = useState(null);
@@ -15,10 +15,10 @@ const Contact = () => {
   const AddressIcon = CONTACT_ICONS.address;
 
   return (
-    <section>
+    <section id=" max-w-[1536px] mx-auto contact">
 
       {/* ═══════════════════════ PART 1 — DESKTOP ═══════════════════════ */}
-      <div className="hidden md:block relative pl-26 pt-16 pb-0">
+      <div className="hidden lg:block relative pl-26 pt-16 pb-0">
 
         {/* ── A. LARGE HEADING ── */}
         <h2
@@ -51,8 +51,8 @@ const Contact = () => {
                 key={field.key}
                 type={field.type}
                 placeholder={field.placeholder}
-                value={formData[field.key]}
-                onChange={(e) => setFormData((prev) => ({ ...prev, [field.key]: e.target.value }))}
+                value={forlgata[field.key]}
+                onChange={(e) => setForlgata((prev) => ({ ...prev, [field.key]: e.target.value }))}
                 onFocus={() => setFocusedField(field.key)}
                 onBlur={() => setFocusedField(null)}
                 className="w-[75%] bg-transparent outline-none mb-6"
@@ -136,7 +136,7 @@ const Contact = () => {
       </div>
 
       {/* ═══════════════════════ PART 1 — MOBILE ═══════════════════════ */}
-      <div className="block md:hidden px-5 pt-10 pb-0 bg-white">
+      <div className="block lg:hidden px-5 pt-10 pb-0 bg-white">
 
         {/* HEADING */}
         <h2
@@ -156,8 +156,8 @@ const Contact = () => {
               key={field.key}
               type={field.type}
               placeholder={field.placeholder}
-              value={formData[field.key]}
-              onChange={(e) => setFormData((prev) => ({ ...prev, [field.key]: e.target.value }))}
+              value={forlgata[field.key]}
+              onChange={(e) => setForlgata((prev) => ({ ...prev, [field.key]: e.target.value }))}
               onFocus={() => setFocusedField(field.key)}
               onBlur={() => setFocusedField(null)}
               className="w-full bg-transparent outline-none mb-5"
@@ -242,7 +242,7 @@ const Contact = () => {
 
       {/* ═══════════════════════ PART 2 — DESKTOP ═══════════════════════ */}
       <div
-        className="hidden md:block relative px-31"
+        className="hidden lg:block relative px-31"
         style={{ backgroundColor: "#0A0A0A", paddingTop: "250px", paddingBottom: "48px" }}
       >
         <div className="flex flex-col">
@@ -292,7 +292,7 @@ const Contact = () => {
 
       {/* ═══════════════════════ PART 2 — MOBILE ═══════════════════════ */}
       <div
-        className="block md:hidden px-5 py-10"
+        className="block lg:hidden px-5 py-10"
         style={{ backgroundColor: "#0A0A0A" }}
       >
         <h2
@@ -334,7 +334,7 @@ const Contact = () => {
       </div>
 
       <div
-        className="flex flex-row items-center justify-between px-5 md:px-29 py-5 gap-3 hidden md:block relative"
+        className="flex flex-row items-center justify-between px-5 lg:px-29 py-5 gap-3 hidden lg:block relative"
         style={{ backgroundColor: "#0A0A0A" }}
       >
         {/* LOGO */}
@@ -355,7 +355,7 @@ const Contact = () => {
       </div>
 
       <div
-        className="flex flex-row   justify-center items-center px-5 md:px-29 py-5 gap-3 md:hidden mb-5 "
+        className="flex flex-row   justify-center items-center px-5 lg:px-29 py-5 gap-3 lg:hidden  "
         style={{ backgroundColor: "#0A0A0A" }}
       >
         {/* LOGO */}

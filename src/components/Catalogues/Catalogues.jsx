@@ -10,7 +10,7 @@ const DownloadBtn = ({ pdf, label }) => (
 
   <a href={pdf || "#"}
     download={pdf ? label : undefined}
-    className="flex items-center gap-2 px-4 py-2 text-white text-[11px] md:text-[18px] uppercase  transition-all hover:bg-white/10"
+    className="flex items-center gap-2 px-4 py-2 text-white text-[11px] lg:text-[18px] uppercase  transition-all hover:bg-white/10"
     style={{ border: "1px solid white", width: "fit-content", fontFamily: "var(--font-poppins)", fontWeight: 300 }}
   >
     TELECHARGER < FlechRight />
@@ -19,10 +19,10 @@ const DownloadBtn = ({ pdf, label }) => (
 
 const CardContent = ({ cat, position }) => (
   <div className={`absolute  ${position} p-5`}>
-    <p className="text-white text-[11px] md:text-[21px] uppercase  mb-1 " style={{ fontFamily: "var(--font-poppins)", fontWeight: 300 }}>
+    <p className="text-white text-[11px] lg:text-[21px] uppercase  mb-1 " style={{ fontFamily: "var(--font-poppins)", fontWeight: 300 }}>
       DÉCOUVREZ
     </p>
-    <p className={`text-white font-[700] uppercase mb-3 text-[18px] md:text-[23px]`} style={{ fontFamily: "var(--font-poppins)", fontWeight: 700 }}>
+    <p className={`text-white font-[700] uppercase mb-3 text-[18px] lg:text-[23px]`} style={{ fontFamily: "var(--font-poppins)", fontWeight: 700 }}>
       {cat.label}
     </p>
     <DownloadBtn pdf={cat.pdf} label={cat.label} />
@@ -31,10 +31,10 @@ const CardContent = ({ cat, position }) => (
 
 const Catalogues = () => {
   return (
-    <section className="relative bg-white px-5 md:px-23 pt-7 md:pt-9 pb-10 md:pb-16 overflow-hidden" id="catalogues">
+    <section className="max-w-[1536px] mx-auto relative bg-white px-5 lg:px-23 pt-7 lg:pt-9 pb-10 lg:pb-13 overflow-hidden" id="catalogues">
 
       {/* ── TOP-RIGHT CUBE (desktop only) ── */}
-      <div className="hidden md:block absolute top-[-35px] right-18 w-[280px] ">
+      <div className="hidden lg:block absolute top-[-35px] right-18 w-[280px] ">
         <img
           src={ASSETS.IMAGES.cubeImg3}
           alt=""
@@ -46,26 +46,26 @@ const Catalogues = () => {
       {/* ── TOP LABEL ── */}
       <div className="flex flex-row items-stretch gap-3">
         {/* Left orange line */}
-        <div class='hidden md:block' style={{
+        <div class='hidden lg:block' style={{
           width: "2.5px",
           backgroundColor: "var(--color-primary)",
           borderRadius: "2px",
           transform: "translate(-10px,8px)",
-          height: '106px'
+          height: '91.5px'
         }} />
 
         {/* Label content */}
         <div>
-          <p className="text-[20px] md:text-[36px] uppercase tracking-tight font-semibold">
+          <p className="text-[20px] lg:text-[34px] uppercase tracking-tight font-semibold mb-[-8px]">
             <span style={{ color: "rgba(19, 74, 135, 1)", fontFamily: "var(--font-poppins)" }}>NOS </span>
             <span style={{ color: "var(--color-primary)", fontFamily: "var(--font-poppins)" }}>CATALOGUES</span>
           </p>
-          <p className="text-[15px] md:text-[32px] uppercase tracking-wider font-extralight"
+          <p className="text-[15px] lg:text-[30px] uppercase tracking-wider font-extralight"
             style={{ color: "var(--color-text-gray)", fontFamily: "var(--font-poppins)" }}>
             L'EXCELLENCE DU SUR-MESURE
           </p>
           {/* Orange underline */}
-          <div className="mt-2 hidden md:block" style={{
+          <div className="mt-2 hidden lg:block" style={{
             width: "380px",
             height: "2.5px",
             backgroundColor: "var(--color-primary)",
@@ -76,7 +76,7 @@ const Catalogues = () => {
 
       {/* ── TAGLINE ── */}
       <p
-        className="text-[11px] md:text-[19px] uppercase tracking-wider md:mt-8 mt-4 mb-10"
+        className="text-[11px] lg:text-[19px] uppercase tracking-wider lg:mt-8 mt-4 mb-10"
         style={{ color: "var(--color-text-gray)", fontFamily: "var(--font-poppins)", fontWeight: 400 }}
       >
         ADMIREZ NOS RÉALISATIONS ET IMAGINEZ CE QUE NOUS POUVONS CRÉER POUR VOUS.
@@ -84,7 +84,7 @@ const Catalogues = () => {
 
       {/* ── CARDS GRID — DESKTOP ── */}
       {/* Layout: [BIG LEFT] [TALL CENTER] [TWO STACKED RIGHT] */}
-      <div className="hidden md:flex flex-row gap-7 items-stretch" style={{ height: "495px" }}>
+      <div className="hidden lg:flex flex-row gap-7 items-stretch" style={{ height: "481px" }}>
 
 
         <div className="relative overflow-hidden flex-[1.4] width-[250px]">
@@ -137,8 +137,8 @@ const Catalogues = () => {
 
       {/* ── CARDS GRID — MOBILE ── */}
       {/* All 4 cards stacked vertically */}
-      <div className="flex md:hidden flex-col gap-4">
-        {CATALOGUES.filter((cat) => cat.id !== "new-mdf").map((cat) => (
+      <div className="flex lg:hidden flex-col gap-4">
+        {CATALOGUES.filter((cat) => cat.id !== "new-lgf").map((cat) => (
           <div
             key={cat.id}
             className="relative overflow-hidden w-full"

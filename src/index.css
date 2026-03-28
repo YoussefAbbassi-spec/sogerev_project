@@ -5,6 +5,8 @@
 @import "@/styles/typography.css";
 @import "tailwindcss";
 
+
+
 /* ========== Custom Fonts ========== */
 @font-face {
   font-family: "Carmine";
@@ -12,6 +14,11 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+
+/* ========== Custom breakpoint ========== */
+@theme {
+  --breakpoint-3xl: 1800px;
 }
 
 /* ========== Theme Tokens ========== */
